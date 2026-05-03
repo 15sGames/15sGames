@@ -32,14 +32,12 @@ h1 {
   margin: 20px auto;
 }
 
-.button-box-wrapper {
-  text-align: center;
-}
 
 .button {
   text-decoration: none;
   color: white;
   font-weight: bold;
+  text-align: center; 
 }
 
 .game-list a {

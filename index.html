@@ -31,30 +31,39 @@
             gap: 10px;
         }
 
-        /* RED BOX STYLE */
-        .button-box-wrapper {
+        /* LIST BOX */
+        .list-box-wrapper {
             text-align: center;
         }
 
-        .button-box {
+        .list-box {
             background-color: red;
             padding: 20px;
             display: inline-block;
             border-radius: 10px;
             margin: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: 0.2s;
+            text-align: left;
+            width: 300px;
         }
 
-        .button-box:hover {
-            transform: scale(1.05);
+        .list-title {
+            font-weight: bold;
+            color: black;
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
         }
 
-        .button {
+        .game-list a {
+            display: block;
             text-decoration: none;
             color: white;
-            font-weight: bold;
-            font-size: 18px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        .game-list a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -70,21 +79,14 @@
 
     <hr>
 
-    <!-- FIRST GAME -->
-    <div class="button-box-wrapper">
-        <div class="button-box">
-            <a href="/15sGames/fvm/" class="button">
-                Family Guy vs. American Dad
-            </a>
-        </div>
-    </div>
+    <div class="list-box-wrapper">
+        <div class="list-box">
+            <div class="list-title">15's Favorites</div>
 
-    <!-- SECOND GAME -->
-    <div class="button-box-wrapper">
-        <div class="button-box">
-            <a href="/15sGames/Farafalla/" class="button">
-                Farafalla
-            </a>
+            <div class="game-list">
+                <a href="/15sGames/fvm/">Family Guy vs. American Dad</a>
+                <a href="/Farafalla/">Farafalla</a>
+            </div>
         </div>
     </div>
 

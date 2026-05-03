@@ -29,5 +29,17 @@ h1 {
   padding: 20px;
   display: inline-block;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  margin: 20px auto;
+}
+
+/* center it nicely */
+.button-box-wrapper {
+  text-align: center;
+}
+
+/* optional: make the link look like a button */
+.button {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }

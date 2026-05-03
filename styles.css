@@ -32,19 +32,21 @@ h1 {
   margin: 20px auto;
 }
 
-/* center it nicely */
 .button-box-wrapper {
   text-align: center;
 }
 
-/* optional: make the link look like a button */
 .button {
   text-decoration: none;
   color: white;
   font-weight: bold;
 }
 
-.button-box:hover {
-  transform: scale(1.05);
-  transition: 0.2s;
+.game-list a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
+    text-align: center; 
 }

@@ -33,15 +33,15 @@
         }
 
         .list-box-wrapper {
-            text-align: left;
+            text-align: center;
         }
 
         .list-container {
             display: flex;
-            justify-content: flex-start;
-            gap: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
             flex-wrap: wrap;
-            padding-left: 40px;
         }
 
         .list-box {
@@ -78,6 +78,11 @@
         .game-list a:hover {
             text-decoration: underline;
         }
+
+        /* ORDER CONTROL */
+        .list-box:nth-child(1) { order: 1; } /* 2 Player */
+        .list-box:nth-child(2) { order: 2; } /* Favorites (center) */
+        .list-box:nth-child(3) { order: 3; } /* Papa's */
     </style>
 </head>
 <body>
@@ -96,7 +101,7 @@
     <div class="list-box-wrapper">
         <div class="list-container">
             
-            <!-- 2 Player (NOW FIRST = LEFT SIDE) -->
+            <!-- 2 Player (LEFT) -->
             <div class="list-box DualPlayer">
                 <div class="list-title">2 Player</div>
                 <div class="game-list">
@@ -104,7 +109,7 @@
                 </div>
             </div>
 
-            <!-- Favorites -->
+            <!-- FAVORITES (CENTER) -->
             <div class="list-box">
                 <div class="list-title">15's Favorites</div>
                 <div class="game-list">
@@ -118,7 +123,7 @@
                 </div>
             </div>
 
-            <!-- Papa's Games -->
+            <!-- PAPA'S (RIGHT) -->
             <div class="list-box">
                 <div class="list-title">Papa's Games</div>
                 <div class="game-list">

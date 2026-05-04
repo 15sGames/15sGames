@@ -54,3 +54,11 @@ h4 {
     font-size: 16px;
     text-align: center; 
 }
+
+.list-container {
+    display: flex;
+    justify-content: flex-start; /* was center */
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 40px; /* adds some space from the edge */
+}

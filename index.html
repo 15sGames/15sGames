@@ -33,14 +33,15 @@
         }
 
         .list-box-wrapper {
-            text-align: center;
+            text-align: left;
         }
 
         .list-container {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 20px;
             flex-wrap: wrap;
+            padding-left: 40px;
         }
 
         .list-box {
@@ -53,9 +54,8 @@
             width: 300px;
         }
 
-        /* NEW lavender box */
         .list-box.lavender {
-            background-color: #73FF63;
+            background-color: #C8A2C8;
         }
 
         .list-title {
@@ -83,7 +83,7 @@
 <body>
 
     <h1>15's Game Library</h1>
-    <h4>Still in development</h4>
+    <h4 style="text-align:center;">Still in development</h4>
     <hr style="margin-top: 50px;">
 
     <div class="parent">
@@ -96,7 +96,7 @@
     <div class="list-box-wrapper">
         <div class="list-container">
             
-            <!-- ORIGINAL LIST -->
+            <!-- Favorites -->
             <div class="list-box">
                 <div class="list-title">15's Favorites</div>
                 <div class="game-list">
@@ -106,17 +106,29 @@
                     <a href="/15sGames/SMBstarscramble/">Super Mario Star Scramble</a>
                     <a href="/15sGames/IWannaWin/">I Wanna Win</a>
                     <a href="/15sGames/BTD5/">Bloons TD 5</a>
-                    <a href="/15sGames/Iwannabethatguy/">I wanna be the Guy</a>
+                    <a href="/15sGames/Iwannabethatguy/">IWBTG</a>
                 </div>
             </div>
 
-            <!-- NEW 2 PLAYER LIST -->
+            <!-- 2 Player -->
             <div class="list-box lavender">
                 <div class="list-title">2 Player</div>
                 <div class="game-list">
                     <a href="/15sGames/FBandWGinTFT">Fire Boy and Water Girl - The Forest Temple</a>
                     <a href="#">Game 2</a>
                     <a href="#">Game 3</a>
+                </div>
+            </div>
+
+            <!-- Papa's Games -->
+            <div class="list-box">
+                <div class="list-title">Papa's Games</div>
+                <div class="game-list">
+                    <a href="#">Papa's Pizzeria</a>
+                    <a href="#">Papa's Burgeria</a>
+                    <a href="#">Papa's Freezeria</a>
+                    <a href="#">Papa's Pancakeria</a>
+                    <a href="#">Papa's Wingeria</a>
                 </div>
             </div>
 

@@ -32,9 +32,15 @@
             gap: 10px;
         }
 
-        /* LIST BOX */
         .list-box-wrapper {
             text-align: center;
+        }
+
+        .list-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .list-box {
@@ -45,6 +51,11 @@
             margin: 20px;
             text-align: left;
             width: 300px;
+        }
+
+        /* NEW lavender box */
+        .list-box.lavender {
+            background-color: #C8A2C8;
         }
 
         .list-title {
@@ -62,14 +73,6 @@
             margin: 5px 0;
             font-size: 16px;
             text-align: center;
-        }
-
-        .game-list a {
-            display: block;
-            text-decoration: none;
-            color: white;
-            margin: 5px 0;
-            font-size: 16px;
         }
 
         .game-list a:hover {
@@ -91,18 +94,32 @@
     <hr>
 
     <div class="list-box-wrapper">
-        <div class="list-box">
-            <div class="list-title">15's Favorites</div>
-
-            <div class="game-list">
-                <a href="/15sGames/fvm/">Family Guy vs. American Dad</a>
-                <a href="/15sGames/Farafalla/">Farafalla</a>
-                <a href="/15sGames/PacXon/">Pac Xon</a>
-                <a href="/15sGames/SMBstarscramble/">Super Mario Star Scramble</a>
-                <a href="/15sGames/IWannaWin/">I Wanna Win</a>
-                <a href="/15sGames/BTD5/">Bloons TD 5</a>
-                <a href="/15sGames/Iwannabethatguy/">IWBTG</a>
+        <div class="list-container">
+            
+            <!-- ORIGINAL LIST -->
+            <div class="list-box">
+                <div class="list-title">15's Favorites</div>
+                <div class="game-list">
+                    <a href="/15sGames/fvm/">Family Guy vs. American Dad</a>
+                    <a href="/15sGames/Farafalla/">Farafalla</a>
+                    <a href="/15sGames/PacXon/">Pac Xon</a>
+                    <a href="/15sGames/SMBstarscramble/">Super Mario Star Scramble</a>
+                    <a href="/15sGames/IWannaWin/">I Wanna Win</a>
+                    <a href="/15sGames/BTD5/">Bloons TD 5</a>
+                    <a href="/15sGames/Iwannabethatguy/">IWBTG</a>
+                </div>
             </div>
+
+            <!-- NEW 2 PLAYER LIST -->
+            <div class="list-box lavender">
+                <div class="list-title">2 Player</div>
+                <div class="game-list">
+                    <a href="#">Game 1</a>
+                    <a href="#">Game 2</a>
+                    <a href="#">Game 3</a>
+                </div>
+            </div>
+
         </div>
     </div>
 

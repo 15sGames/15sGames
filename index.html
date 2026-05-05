@@ -61,10 +61,14 @@
         .list-box.papas {
             background-color: #FF4D4D;
         }
+
         .list-box.flash {
-            background-color: #FF7F7F; /* light red */
+            background-color: #FF7F7F;
         }
-        
+
+        .list-box.fnaf {
+            background-color: #5E5E5E;
+        }
 
         .list-title {
             font-weight: bold;
@@ -72,10 +76,6 @@
             font-size: 20px;
             margin-bottom: 10px;
             text-align: center;
-        }
-        
-        .list-box.fnaf {
-            background-color: #5E5E5E;
         }
 
         .game-list a {
@@ -90,10 +90,6 @@
         .game-list a:hover {
             text-decoration: underline;
         }
-
-        .list-box:nth-child(1) { order: 1; }
-        .list-box:nth-child(2) { order: 2; }
-        .list-box:nth-child(3) { order: 3; }
     </style>
 </head>
 <body>
@@ -112,6 +108,7 @@
     <div class="list-box-wrapper">
         <div class="list-container">
             
+
             <div class="list-box DualPlayer">
                 <div class="list-title">Multiplayer</div>
                 <div class="game-list">
@@ -120,7 +117,7 @@
                 </div>
             </div>
 
-    
+     
             <div class="list-box">
                 <div class="list-title">15's Favorites</div>
                 <div class="game-list">
@@ -134,30 +131,31 @@
                 </div>
             </div>
 
-            <div class="list-box papas">
-                <div class="list-title">Papa's Games</div>
-                <div class="game-list">
-                    <a href="/15sLibrary/PapasPizzaria">Papa's Pizzeria</a>
-                </div>
-            </div>
+   
             <div class="list-box fnaf">
                 <div class="list-title">Five Nights Games</div>
                 <div class="game-list">
                     <a href="/15sLibrary/FiveNightsAtCrockos/">Five Nights at Crocko's</a>
                 </div>
             </div>
+
+ 
             <div class="list-box flash">
                 <div class="list-title">Flash Games</div>
-                    <div class="game-list">
-                        <a href="/15sLibrary/LFT/">Learn to fly 1</a>
-                    </div>
+                <div class="game-list">
+                    <a href="/15sLibrary/LFT/">Learn to Fly 1</a>
+                </div>
             </div>
-    </div>
+
+            <div class="list-box papas">
+                <div class="list-title">Papa's Games</div>
+                <div class="game-list">
+                    <a href="/15sLibrary/PapasPizzaria">Papa's Pizzeria</a>
+                </div>
+            </div>
 
         </div>
+    </div>
 
-            
-
-    
 </body>
 </html>
